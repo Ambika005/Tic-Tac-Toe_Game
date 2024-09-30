@@ -1,0 +1,19 @@
+.cell{
+    width:75px;
+    height:75px;
+    border:2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+#cellcontainer{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+    width:225px;
+}
