@@ -1,19 +1,50 @@
-.cell{
-    width:75px;
-    height:75px;
-    border:2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
-}
-#container{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .game-container {
     text-align: center;
-}
-#cellcontainer{
-    display:grid;
-    grid-template-columns: repeat(3,auto);
-    margin: auto;
-    width:225px;
-}
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #333;
+  }
+  
+  #reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  #status {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
